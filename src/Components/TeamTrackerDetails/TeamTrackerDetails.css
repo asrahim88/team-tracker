@@ -1,0 +1,91 @@
+.detailsBanner {
+    width: 100%;
+    height: 300px;
+    background-size: 1520px 300px;
+    background-repeat: 'no-repeat';
+}
+.description {
+    background-color: rgb(87, 87, 243);
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 25px;
+}
+.iconImg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-bottom: 18px;
+}
+.icon-image {
+    float: left;
+    margin-top: 18px;
+}
+.icon-des {
+    float: left;
+    margin-left: 15px !important;
+}
+.icon-description {
+    display: inline-block;
+    color: bisque;
+}
+.teamName{
+    color: bisque;
+}
+.photo{
+    width: 550px;
+    height: 250px;
+}
+@media screen and (max-width: 425px) {
+    .photo {
+      width: 250px;
+      height: 110px;
+    }
+    .detailsBanner{
+        background-size: 425px 100px;
+        height: 100px;
+    }
+    .bannerLogo{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .bannerLogoParent{
+        margin-left: 40% !important;
+        padding-top: 10px !important;
+    }
+  }
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+.body-details{
+    background-color: rgb(25, 25, 68);
+    color: bisque;
+    padding-bottom: 50px;
+   
+}
+.social{
+    text-align: center;
+}
+.socialImage{
+    margin-left: 12px;
+    font-size: 30px;
+}
+.socialBox{
+    margin-top: 55px;
+    
+}
+.socialBox a{
+    color: antiquewhite;
+}
+.bannerLogo{
+    width: 150px;
+    height: 150px;
+}
+.bannerLogo img {
+    width: 100%;  
+}
+.bannerLogoParent{
+    margin-left: 50%;
+    padding-top: 70px;
+}
+

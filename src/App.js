@@ -1,15 +1,36 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import './App.css';
+import Home from './Components/Home/Home';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import TeamTrackerDetails from './Components/TeamTrackerDetails/TeamTrackerDetails';
+import NotMatch from './Components/NotMatch/NotMatch';
 
 
 function App() {
   return (
     <div>
-      <Button variant="contained" color="primary" href="#contained-buttons">
-        Link
-      </Button>
-      
+      <Router>
+        <Switch>
+          <Route path="/home">
+            <Home ></Home>
+          </Route>
+          <Route path="/teamDetails/:idTeam">
+            <TeamTrackerDetails></TeamTrackerDetails>
+          </Route>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="*">
+            <NotMatch></NotMatch>
+          </Route>
+        </Switch>
+      </Router>
+
+
     </div>
   );
 }

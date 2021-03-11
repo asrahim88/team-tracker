@@ -1,0 +1,27 @@
+.img{
+    width: 150px;
+    height: 150px;
+}
+.img img {
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 50%;
+}
+.information{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.icon{
+    margin-left: 10px;
+}
+.exploreLink{
+    text-decoration: none;
+}
+@media screen and (max-width: 450px) {
+    .teamLogo{
+        margin-left: 110px !important;
+    }
+}
+
