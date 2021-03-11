@@ -15,7 +15,6 @@ import { faFacebookSquare, faTwitterSquare, faYoutubeSquare } from '@fortawesome
 
 const TeamTrackerDetails = () => {
     const { idTeam } = useParams();
-    console.log(idTeam);
     const [teamDetails, setTeamDetails] = useState([]);
 
     useEffect(() => {
@@ -50,7 +49,7 @@ const TeamTrackerDetails = () => {
                                         <img className='iconImg' src={icon2} alt="" />
                                     </div>
                                     <div className='icon-des'>
-                                        <p>Founded: November 5, {intFormedYear}</p>
+                                        <p>Founded: {intFormedYear}</p>
                                         <p>Country: {strCountry}</p>
                                         <p>Sports type: {strLeague2}</p>
                                         <p>Gender: {strGender}</p>

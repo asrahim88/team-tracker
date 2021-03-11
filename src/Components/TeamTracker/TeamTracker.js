@@ -18,10 +18,8 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-
 const TeamTracker = (props) => {
-    console.log(props.teams)
-    const { strTeam, strTeamBadge,idTeam, strLeague2 } = props.teams;
+    const { strTeam, strTeamBadge,idTeam, strLeague2} = props.teams;
     const classes = useStyles();
     return (
         <Grid item xs={12} sm={3}>
